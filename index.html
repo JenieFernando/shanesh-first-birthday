@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#dff4ff" />
+  <meta name="description" content="You're invited to celebrate Shanesh's first birthday!" />
+  <title>Shanesh Turns One! 🎈</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sky-decor" aria-hidden="true">
+    <span class="cloud cloud-a">☁</span><span class="cloud cloud-b">☁</span>
+    <span class="star star-a">✦</span><span class="star star-b">✧</span>
+    <span class="balloon balloon-a">🎈</span><span class="balloon balloon-b">🎈</span>
+    <span class="balloon balloon-c">🎈</span>
+  </div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="confetti" aria-hidden="true"></div>
+      <div class="top-label">A LITTLE BUNDLE OF JOY IS TURNING ONE</div>
+      <div class="one-wrap"><span class="one">1</span><span class="sparkle">✦</span></div>
+      <p class="eyebrow">OUR LITTLE STAR IS CELEBRATING</p>
+      <h1>Shanesh<br><span>turns ONE!</span></h1>
+      <p class="intro">One year of giggles, cuddles and countless precious memories.<br>Come celebrate this very special milestone with us!</p>
+      <button class="primary-btn" id="openInvite">Open your invitation <span>↓</span></button>
+      <div class="scroll-note">SCROLL TO EXPLORE</div>
+    </section>
+
+    <section class="invite-section" id="invitation">
+      <div class="section-card">
+        <div class="mini-kicker">HIP HIP HOORAY!</div>
+        <h2>You're invited, <span id="guestName">dear friend</span>!</h2>
+        <p class="body-copy">With tiny steps and a big smile, Shanesh is turning ONE!<br>We'd love for you to join us for an evening filled with fun, laughter and birthday magic.</p>
+        <div class="cake" aria-label="Birthday cake">🎂</div>
+        <div class="details-grid">
+          <div class="detail"><span class="detail-icon">📅</span><small>DATE</small><strong>21 November 2026</strong><span>Saturday</span></div>
+          <div class="detail"><span class="detail-icon">⏰</span><small>TIME</small><strong>7:00 PM</strong><span>In the evening</span></div>
+          <div class="detail venue-detail"><span class="detail-icon">📍</span><small>VENUE</small><strong>Hotel Camellia</strong><span>Dankotuwa, Sri Lanka</span></div>
+        </div>
+        <a class="secondary-btn" href="https://www.google.com/maps/search/?api=1&query=Hotel+Camellia+Dankotuwa+Sri+Lanka" target="_blank" rel="noopener">Find the venue <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="countdown-section">
+      <p class="eyebrow">THE PARTY IS ALMOST HERE</p>
+      <h2>Let the countdown begin!</h2>
+      <div class="countdown" aria-live="polite">
+        <div><strong id="days">--</strong><span>DAYS</span></div>
+        <div><strong id="hours">--</strong><span>HOURS</span></div>
+        <div><strong id="minutes">--</strong><span>MINUTES</span></div>
+        <div><strong id="seconds">--</strong><span>SECONDS</span></div>
+      </div>
+      <p id="countdownMessage" class="countdown-message">We're getting ready for a magical day!</p>
+    </section>
+
+    <section class="rsvp-section">
+      <div class="rsvp-card">
+        <div class="mini-kicker">SAVE YOUR SPOT</div>
+        <h2>Will you join the fun?</h2>
+        <p>Let the family know if you can make it. We can't wait to celebrate with you!</p>
+        <a class="whatsapp-btn" id="rsvpButton" href="#" target="_blank" rel="noopener">💬 Confirm on WhatsApp</a>
+        <p class="tiny-note">Please RSVP with the family.</p>
+      </div>
+      <div class="closing">Tiny hands, big dreams, one wonderful year. <span>💛</span></div>
+      <div class="footer">MADE WITH LOVE FOR SHANESH'S FIRST BIRTHDAY</div>
+    </section>
+  </main>
+
+  <div class="music-control">
+    <audio id="birthdayMusic" loop preload="none">
+      <source src="birthday-music.mp3" type="audio/mpeg">
+    </audio>
+    <button id="musicToggle" aria-label="Play birthday music">♫ Play music</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
